@@ -67,6 +67,8 @@ hasilnya secara berurutan mulai dari data terkecil.
 <br>for nilai in data:
    <br> print(nilai)
 
+   # Hasil perogram
+
    [gambar](ss3.png)
 
 
