@@ -1,4 +1,4 @@
-# praktikum-7
+# praktikum 7
 Buat program sederhana dengan input tiga buah bilangan, dari ketiga bilangan
 tersebut tampilkan bilangan terbesarnya. Gunakan statement if.
 <P># Meminta input dari pengguna
@@ -25,9 +25,10 @@ tersebut tampilkan bilangan terbesarnya. Gunakan statement if.
     
 ![gambar](flowchart.png)
 
+# Tugas struktur kondisi
 
 # latihan 1
-Buat program sederhada dengan input 2 buah bilangan, kemudian tentukan bilangan terbesar dari kedua bilangan tersebut menggunakan statement if.
+Buat program sederhana dengan input 2 buah bilangan, kemudian tentukan bilangan terbesar dari kedua bilangan tersebut menggunakan statement if.
 <P> # Meminta input dari pengguna
 <br>bilangan1 = float(input("Masukkan bilangan pertama: "))
 <br>bilangan2 = float(input("Masukkan bilangan kedua: "))
@@ -69,6 +70,47 @@ hasilnya secara berurutan mulai dari data terkecil.
 
    # Hasil perogram
 
-   [gambar](ss3.png)
+   ![gambar](ss2.png)
+
+   # Tugas perulangan
+
+   # latihan 1
+   Buat program dengan perulangan bertingkat (nested) for yang menghasilkan output sebagai berikut
+  <P> 1.pendeklarasian variable
+ <br>  baris = 10
+<br>kolom = baris
+<P> 2.untuk perulangan baris dan kolom menggunakan for
+<br>for bar in range(baris):
+   <br> for col in range(kolom):
+     <br>   tab = bar+col
+   <P> 3.agar terlihat rapih menggunakan format string rata kekanan sebanyak 5 karakter
+       <br> agar tidak membuat garis baru menggunakan end=' ' (baris)
+      <br>  print("{0:>5}".format(tab), end='')
+   <br> print()
+
+   # Hasil perogram
+
+   ![gambar](ss3.png)
+
+   # latihan 2
+   Tampilkan n bilangan acak yang lebih kecil dari 0.5. nilai n diisi pada saat runtime anda bisa menggunakan kombinasi while dan for untuk menyelesaikannya
+  <P> import random
+
+<br>n = int(input("Masukkan nilai n: "))
+
+<br>count = 0  # Inisialisasi jumlah bilangan acak yang sudah dihasilkan
+
+<br>print(f"{n} bilangan acak yang lebih kecil dari 0.5:")
+<br>while count < n:
+  <br>  random_num = random.random()  # Menghasilkan bilangan acak antara 0 dan 1
+   <br> if random_num < 0.5:
+   <br>     print(random_num)
+    <br>    count += 1
+
+# Hasil perogram
+
+![gambar](ss4.png)
+
+   
 
 
